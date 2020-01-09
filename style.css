@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #3388cc, #c9670c);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.inputs{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-group1, .input-group2, .input-group3{
+  margin: 2rem;
+  padding: 1rem;
+  
+}
+
+.cigCost, .cigAmount, .days{
+  padding: .25rem;
+  border-radius: 5px;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#buttonCalc, #buttonReset{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: .55rem;
+  padding: .25rem;
+  border-radius: 5px;
+}
+
+#buttonCalc:hover, #buttonReset:hover{
+  background-color: green;
+}
+
+.celebration{
+  font-size: 4rem;
+  color: red;
+  animation: celebration 1s linear infinite;
+}
+@keyframes celebration{
+  50%{
+    opacity: 0;
+  }
+}
+
+.encourage{
+  font-size: 4rem;
+  color: green;
+  animation: encourage 1s linear infinite;
+}
+@keyframes encourage{
+  50%{
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .buttons{
+    display: flex;
+    flex-direction: column;
+  }
+}
